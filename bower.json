@@ -1,0 +1,17 @@
+{
+  "name": "real_estate_01",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Quan Tien <vinhnt9x@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/tienquanptit/real_estate_01",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
