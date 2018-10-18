@@ -38,7 +38,7 @@
     <link href="bower_components/demo-bower/assets/admin/build/css/custom.min.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="css/add.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body class="nav-md">
 <div class="container body">
@@ -73,7 +73,8 @@
 </div>
 
 <!-- jQuery -->
-<script src="bower_components/demo-bower/assets/admin/vendors_style/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript"
+        src="bower_components/demo-bower/assets/admin/vendors_style/jquery/dist/jquery.min.js"></script>
 <!-- TypeHead js -->
 <script src="bower_components/demo-bower/assets/admin/js/typeahead.bundle.min.js"></script>
 <script src="bower_components/demo-bower/assets/admin/js/bloodhound.min.js"></script>
@@ -125,7 +126,8 @@
 <script src="bower_components/demo-bower/assets/admin/build/js/custom.min.js"></script>
 @stack('scripts_products')
 
-<script src="bower_components/demo-bower/assets/admin/js/admin.js"></script>
-<script src="bower_components/demo-bower/assets/admin/js/ajax.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript" src="bower_components/demo-bower/assets/admin/js/admin.js"></script>
+{{--<script src="bower_components/demo-bower/assets/admin/js/ajax.js"></script>--}}
 </body>
 </html>
