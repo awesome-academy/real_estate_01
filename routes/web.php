@@ -27,5 +27,11 @@ Route::group(['prefix' => 'admin', 'middleware' => ['adminLogin', 'locale']], fu
 //category
 Route::resource('/categories', 'Admin\CategoryController')->except(['show']);
 //hidden and show status of category
-Route::post('hidden_status_categories/{id?}', 'Admin\CategoryController@hidden_status_categories')->name('hidden_status_categories');
-Route::post('show_status_categories/{id?}', 'Admin\CategoryController@show_status_categories')->name('show_status_categories');
+Route::post('hidden_status_categories/{id?}', 'Admin\CategoryController@hiddenStatusCategories')->name('hidden_status_categories');
+Route::post('show_status_categories/{id?}', 'Admin\CategoryController@showStatusCategories')->name('show_status_categories');
+
+//posts
+Route::resource('/posts', 'Admin\PostController');
+//hidden and show status of post
+Route::post('hidden_status_posts/{id?}', 'Admin\PostController@hiddenStatusPosts')->name('hidden_status_posts');
+Route::post('show_status_posts/{id?}', 'Admin\PostController@showStatusPosts')->name('show_status_posts');

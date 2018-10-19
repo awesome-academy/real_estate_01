@@ -7,8 +7,10 @@
  */
 return [
     'logo' => 'upload/logo/',
-    'img' => 'assets/upload/config',
+    'img' => 'assets/upload/config/',
+    'image_upload' => '/assets/upload/',
     'default_zero' => 0,
     'default_one' => 1,
+    'filemanager' => 'assets/filemanager/',
 ];
 ?>

@@ -113,7 +113,7 @@ class CategoryController extends Controller
             trans('post.delete_category_success', ['name' => $category->name]));
     }
 
-    public function hidden_status_categories(Request $request, $id)
+    public function hiddenStatusCategories(Request $request, $id)
     {
         $category = Category::findOrFail($id);
         $category->status = config('common.default_zero');
@@ -122,7 +122,7 @@ class CategoryController extends Controller
         return response()->json(['flag' => 'success', 'message' => trans('category.update_status')]);
     }
 
-    public function show_status_categories(Request $request, $id)
+    public function showStatusCategories(Request $request, $id)
     {
         $category = Category::findOrFail($id);
         $category->status = config('common.default_one');
