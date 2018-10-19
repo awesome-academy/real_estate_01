@@ -116,7 +116,7 @@ class CategoryController extends Controller
     public function hidden_status_categories(Request $request, $id)
     {
         $category = Category::findOrFail($id);
-        $category->status = config('default_zero');;
+        $category->status = config('common.default_zero');
         $category->save();
 
         return response()->json(['flag' => 'success', 'message' => trans('category.update_status')]);
@@ -125,7 +125,7 @@ class CategoryController extends Controller
     public function show_status_categories(Request $request, $id)
     {
         $category = Category::findOrFail($id);
-        $category->status = config('default_one');
+        $category->status = config('common.default_one');
         $category->save();
 
         return response()->json(['flag' => 'success', 'message' => trans('category.update_status')]);
